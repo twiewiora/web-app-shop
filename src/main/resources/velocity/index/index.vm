@@ -1,0 +1,10 @@
+#parse("/velocity/layout.vm")
+#@mainLayout()
+    <h1>$msg.get("INDEX_HEADING")</h1>
+    <h2>$msg.get("INDEX_REGISTERED_USERS", $companies.size())</h2>
+    <ul>
+        #foreach($company in $companies)
+            <li>$company.getCompanyName()</li>
+        #end
+    </ul>
+#end

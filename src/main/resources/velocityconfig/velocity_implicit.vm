@@ -1,0 +1,13 @@
+#* @implicitly included *#
+#* @vtlvariable name="WebPath" type="app.utils.Path.Web" *#
+#* @vtlvariable name="msg" type="app.utils.MessageBundle" *#
+#* @vtlvariable name="products" type="java.util.List<app.database.entity.Product>" *#
+#* @vtlvariable name="product" type="app.database.entity.Product" *#
+#* @vtlvariable name="suppliers" type="java.util.List<app.database.entity.Supplier>" *#
+#* @vtlvariable name="supplier" type="app.database.entity.Supplier" *#
+#* @vtlvariable name="companies" type="java.util.List<app.database.entity.Company>" *#
+#* @vtlvariable name="currentUser" type="java.lang.String" *#
+#* @vtlvariable name="loggedOut" type="java.lang.String" *#
+#* @vtlvariable name="authenticationFailed" type="java.lang.String" *#
+#* @vtlvariable name="authenticationSucceeded" type="java.lang.String" *#
+#* @vtlvariable name="loginRedirect" type="java.lang.String" *#

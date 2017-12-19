@@ -1,0 +1,19 @@
+#parse("/velocity/layout.vm")
+#@mainLayout()
+    #if($supplier)
+    <h2>$supplier.getCompanyName()</h2>
+    <div class="book">
+        <li>Company name: $supplier.getCompanyName()/li>
+        <li>Address: $supplier.getAddress().getCity()</li>
+        <li>Products:</li>
+        #foreach($product in $supplier.getProducts())
+            <li>$product.getProductName()</li>
+        #end
+##        <div class="bookCover">
+##            <img src="$product.getLargeCover()" alt="$product.getTitle()">
+##        </div>
+    </div>
+    #else
+    <h1>$msg.get("PRODUCT_NOT_FOUND")</h1>
+    #end
+#end
